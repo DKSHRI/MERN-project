@@ -1,7 +1,7 @@
 import React from 'react'
 import { BrowserRouter, Routes, Route } from 'react-router-dom'
 import Header from './Component/Common/Header'
-import Footer from './Component/Common/footer'
+import Footer from './Component/Common/Footer'
 
 const App = () => {
   return (
