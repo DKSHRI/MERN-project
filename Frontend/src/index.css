@@ -1,1 +1,16 @@
 @import "tailwindcss";
+
+/* color cycle animation for footer signup text */
+@keyframes colorCycle {
+  0%   { color: #ff3b30; transform: scale(1); text-shadow: none; }
+  25%  { color: #ffcc00; transform: scale(1.03); text-shadow: 0 6px 18px rgba(255,204,0,0.12); }
+  50%  { color: #28a745; transform: scale(1.06); text-shadow: 0 8px 24px rgba(40,167,69,0.14); }
+  75%  { color: #ffffff; transform: scale(1.03); text-shadow: 0 6px 18px rgba(255,255,255,0.06); }
+  100% { color: #ff3b30; transform: scale(1); text-shadow: none; }
+}
+
+.animate-color-cycle {
+  display: inline-block;
+  animation: colorCycle 3s linear infinite;
+  will-change: color, transform, text-shadow;
+}
